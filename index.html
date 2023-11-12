@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br" class="">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FocusTimer</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    <script type="module" src="./src/script.js" defer></script>
+</head>
+<body>
+    <div id="app">
+
+        <button id="toggle-mode">
+            <span class="sr-only">ativar/desativar light mode</span>
+            <i class="ph-bold ph-sun"></i>
+            <i class="ph-bold ph-moon"></i>
+        </button>
+    
+        <section id="timer" class="flex">
+        <span id="minutes">00</span>
+        <span>:</span>
+        <span id="seconds">00</span>
+
+        </section>
+
+        <section id="controls" class="flex">
+            <audio src="./assets/2023-10-24 16-25-11.Mp3"></audio>
+        <button class="ph ph-play-circle" data-action="toggleRunning"></button>
+        <button class="ph ph-pause-circle" data-action="toggleRunning"></button>
+        <button class="ph ph-timer secondary" data-action="set"></button>
+        <button class="ph ph-stop-circle secondary" data-action="reset"></button> 
+        <button class="ph ph-speaker-none secondary" data-action="toggleMusic"></button>
+        <button class="ph ph-speaker-high" data-action="toggleMusic"></button>
+        </section>
+</div>
+</body>
+</html>
